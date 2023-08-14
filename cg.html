@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-areas:
+            'head head head'
+            'main main main'
+       }
+        #head{
+            border: 4px solid black;
+            grid-area: head;
+            grid-template-areas:
+            'he1 he1 he2';
+            display: grid;
+            background-color:aquamarine;
+        }
+        .he1{
+            grid-area:he1;
+        }
+        .he2{
+            grid-area:he2;
+        }
+        #main{
+            grid-area: main;
+            display: grid;
+            border: 4px solid black;
+            background-color: azure;
+            grid-template-areas:
+            'box ma1' 
+          }
+          
+        #box{
+            grid-area: box;
+        }
+
+        .ma1{
+            grid-area: ma1;
+        } 
+        #container div{
+            margin: 10px;
+        }
+        label{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button{
+            background-color:black;
+            color:whitesmoke;
+        }
+        input {
+          border:2px solid black;
+          width: 10%;
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+    <div id="head">
+        <div class="he1" style=" margin-left: 500px;"><h1>CGPA CALCULATOR</h1></div>
+    </div>
+    <div id="main">
+        <div id="box"><button id="btn">Click to add subjects</button><br>
+            <br><label for='her'>Enter the grade points and credit points</label>
+           
+        </div>
+        <div class="ma1">
+            <p>Click to see CGPA   <button id="btnResult">Result</button></p>
+            <div class="form-popup" id="myForm">
+                  <label for="email"><b>YOUR RESULT</b></label>
+                  <input id="typ" >
+              </div>
+              <label id="best" for='her' style="font-size:20px">ALL THE BEST FOR YOUR FUTURE !</label>  
+        </div>
+    </div>
+    
+    </div>
+    <script src="jasc.js"></script>
+</body>
+</html>
